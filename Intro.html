@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | CB Tile Center</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="home">
+
+  <!-- HEADER -->
+  <header>
+    <div class="inner container">
+      <div class="logo"><a href="Intro.html">CB TILE CENTER</a></div>
+      <nav>
+        <ul>
+          <li><a href="Intro.html" class="active">HOME</a></li>
+          <li><a href="Products.html">PRODUCTS</a></li>
+          <li><a href="service.html">SERVICE</a></li>
+          <li><a href="About.html">ABOUT US</a></li>
+          <li><a href="Contact us.html">CONTACT US</a></li>
+           
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <main>
+    <section id="home" class="section hero">
+      <div class="overlay"></div>
+      <div class="hero-content container">
+        <a href="Products.html" class="btn-primary">Browse Products</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2025 CB Tiles Center. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+  // Smooth fade transition when navigating
+  
+  document.querySelectorAll("a[href]").forEach(link => {
+    link.addEventListener("click", e => {
+      const href = link.getAttribute("href");
+      if (href && !href.startsWith("#") && !href.startsWith("mailto") && !href.startsWith("tel")) {
+        e.preventDefault();
+        document.body.classList.add("fade-out");
+        setTimeout(() => {
+          window.location = href;
+        }, 300);
+      }
+    });
+  });
+</script>
+
+
+</body>
+</html>

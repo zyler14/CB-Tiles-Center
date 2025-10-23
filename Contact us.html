@@ -1,0 +1,71 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | CB Tile Center</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="contact">
+
+  <!-- HEADER -->
+  <header>
+    <div class="inner container">
+      <div class="logo"><a href="Intro.html">CB TILE CENTER</a></div>
+      <nav>
+        <ul>
+          <li><a href="Intro.html">HOME</a></li>
+          <li><a href="Products.html">PRODUCTS</a></li>
+          <li><a href="service.html">SERVICE</a></li>
+          <li><a href="Feedback.html" class="active">FEEDBACK</a></li>
+          <li><a href="About.html">ABOUT US</a></li>
+          <li><a href="Contact us.html" class="active">CONTACT US</a></li>
+        </ul>
+         
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section contact-us">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>For questions or additional information, you can reach us through the following:</p>
+
+      <div class="contact-info">
+        <p><strong>Owner:</strong> Christian Barrido</p>
+        <p><strong>Address:</strong> 063 jp rizal st, Barangay santa lucia, Quezon City, Philippines</p>
+        <p><strong>Phone:</strong> +63 927 947 5206</p>
+        <p><strong>Email:</strong> Cbtilescenter@.com</p>
+      </div>
+    </div>
+  </section>
+
+ 
+  <footer>
+    <div class="container">
+      <p>© 2025 CB Tiles Center. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+  // Smooth fade transition when navigating
+  document.querySelectorAll("a[href]").forEach(link => {
+    link.addEventListener("click", e => {
+      const href = link.getAttribute("href");
+      if (href && !href.startsWith("#") && !href.startsWith("mailto") && !href.startsWith("tel")) {
+        e.preventDefault();
+        document.body.classList.add("fade-out");
+        setTimeout(() => {
+          window.location = href;
+        }, 300);
+      }
+    });
+  });
+</script>
+
+
+</body>
+</html>

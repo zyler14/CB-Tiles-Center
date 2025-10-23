@@ -1,0 +1,78 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | CB Tile Center</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="about">
+
+  <!-- HEADER -->
+  <header>
+    <div class="inner container">
+      <div class="logo">
+        <a href="Intro.html">CB TILE CENTER</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="Intro.html">HOME</a></li>
+          <li><a href="Products.html">PRODUCTS</a></li>
+          <li><a href="service.html">SERVICE</a></li>
+          <li><a href="About.html" class="active">ABOUT US</a></li>
+          <li><a href="Contact us.html"> CONTACT US</a></li>
+         
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section about-us">
+    <div class="container">
+      <h2>ABout CB Tile Center</h2>
+
+      <div class="about-content">
+        <!-- IMAGE -->
+        <div class="about-image">
+          <img src="background.jpg" alt="Showroom of CB Tile Center">
+        </div>
+
+        <!-- TEXT -->
+        <div class="about-text">
+          <p>CB Tiles Center was founded in 2005 to bring high-quality tile and flooring solutions to homeowners, architects, and contractors. We have grown across Luzon, always focusing on integrity, product quality, and excellent customer service.</p>
+          <p>We believe in innovation, sustainability, and customer satisfaction. Our team is ready to assist you in choosing the perfect tile for your projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 CB Tiles Center. All Rights Reserved.</p>
+
+    </div>
+  </footer>
+
+  <script>
+  // Smooth fade transition when navigating
+  document.querySelectorAll("a[href]").forEach(link => {
+    link.addEventListener("click", e => {
+      const href = link.getAttribute("href");
+      if (href && !href.startsWith("#") && !href.startsWith("mailto") && !href.startsWith("tel")) {
+        e.preventDefault();
+        document.body.classList.add("fade-out");
+        setTimeout(() => {
+          window.location = href;
+        }, 300);
+      }
+    });
+  });
+</script>
+
+
+</body>
+
+</html>
